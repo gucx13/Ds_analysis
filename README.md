@@ -18,7 +18,11 @@
 * MC(unfinished)
 	*Geo_Ds
 	 Produce GenDsMC.root for acceptance study.
-
+	*Full_Ds
+         *tuple_for_truth_matching
+	  tuple for truth matching 
+         *tuple
+          tuple for other eff(SelEff)
 * AccpEff
 	-AddMCBtag.py 
 	 use GenDsMC.root to add a new branch FROMB tag,produce GenDsMCBtag.root we only care prompt event.
