@@ -61,7 +61,17 @@
 
 * PIDEff
 	-GetEff.py
-	 
+	 define two func GetEffData(not use) && GetEffMC to calculate the Ap and pA PIDEff.
+
+* FitMass
+	-SeparateFile_Ap.C
+         separate ApUpcharm2013_cut_logipchi2.root && ApDowncharm2013_cut_logipchi2.root bin by bin and save in data
+	-SeparateFile_pA.C
+	 same as SeparateFile_Ap.C
+	-FitMass.C
+	 run SeperateFile and fit in every y&pt bins : sig func is double gauss,bkg func is Chebychev.Save in fig.
+	-FitMassCBS.C
+ 	 
 
 * Question
 	-why the truthmatch eff use diff tuple with the other eff?
