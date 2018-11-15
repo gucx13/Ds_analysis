@@ -63,17 +63,39 @@
 	-GetEff.py
 	 define two func GetEffData(not use) && GetEffMC to calculate the Ap and pA PIDEff.
 
+* FitMassMC
+	alpha and f use all MC fit to decide.n=1 for physics reason.
+
+
 * FitMass
 	-SeparateFile_Ap.C
          separate ApUpcharm2013_cut_logipchi2.root && ApDowncharm2013_cut_logipchi2.root bin by bin and save in data
 	-SeparateFile_pA.C
 	 same as SeparateFile_Ap.C
 	-FitMass.C
-	 run SeperateFile and fit in every y&pt bins : sig func is double gauss,bkg func is Chebychev.Save in fig.
+	 run SeperateFile and fit in every y&pt bins : sig func is double gauss,bkg func is Chebychev.Save in fig,note the collision need to write.
 	-FitMassCBS.C
- 	 
+	 same as FitMass.C but use CBS+chebychev
+	-FitMassEvtMult.C
+	 same as FitMassCBS.C, but will also write out a new tree containing sweight.have add sweight in Pbp 5TeV data save in datasw_Pbp_5TeV
+        -FitMassEvtMult_Pbp_5TeV.C
+
+
 
 * Question
 	-why the truthmatch eff use diff tuple with the other eff?
 	-why the truthmatch eff don't divide B&F y&pT?(statistic)
+
+
+
+* BFraction
+	Use Pbp MC to get the alpha and f and fix them in the data fit and get sweight. So we dont consider bkg when we fit BFraction.
+
+* EvtMult
+	
+
+
+
+
+
 
